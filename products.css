@@ -45,5 +45,12 @@
     margin-left:5px;
 }
 .active{
-    background-color: blanchedalmond;
+    background-color: #b9b9b9;
+}
+.products__title{
+    display: inline;
+}
+.products__cart{
+    display: inline-block;
+    float: right;
 }

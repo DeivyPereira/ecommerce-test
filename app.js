@@ -11,9 +11,7 @@ function readJson() {
             let app = document.querySelector('#products__container');
             let nodes = this.products.map((lang, index) => {
                 let li = document.createElement('div');
-                //lang[src] = lang[src].replace(/(\r)/gm, "");
                 let img = lang.images[0].src;
-
                 li.innerHTML = '<div class="product_detail" >'+
                     '<img src="'+img+'" class="product_img">'+
                     '<div class="title">' + lang.title + '</div>'+
@@ -34,11 +32,16 @@ function readJson() {
 
 function AddCart(elemnt){
     var elem = document.getElementById('cart-'+ elemnt);
+    var cart = document.getElementById('cart-count');
+    var cartValue  = cart.textContent || cart.innerText;
     if(elem.classList.contains("active")){
         elem.classList.remove("active");
         elem.innerHTML = "Comprar";
+        cart.innerHTML = parseInt(cartValue)-1;
     }else{
         elem.classList.add("active")
         elem.innerHTML = "Remover";
+        cart.innerHTML = parseInt(cartValue)+1;
     }
 }
+
