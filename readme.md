@@ -6,7 +6,7 @@ Tendrás un archivo JSON con los contenidos de la API de Shopify de productos.
 
 No puedes usar ninguna librería externa para lograr esto, solo debes usar las API del navegador. 
 
-![Mini Sitio](https://github.com/saulsolorzano/glowing-invention/blob/master/product-hd.gif?raw=true)
+![Mini Sitio](product-hd.gif?raw=true)
 
 *** 
 
